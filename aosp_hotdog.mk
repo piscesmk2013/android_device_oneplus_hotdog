@@ -45,6 +45,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=OnePlus7TPro \
     PRIVATE_BUILD_DESC="OnePlus7TPro_EEA-user 10 QKQ1.190716.003 2007240000 release-keys"
 
+PRODUCT_ODM_PROPERTY_BLACKLIST += \
+    ro.product.odm.model
+
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.system.model
 
