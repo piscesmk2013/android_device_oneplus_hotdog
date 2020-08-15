@@ -3,5 +3,10 @@
     "repository" : "android_device_oneplus_sm8150-common",
     "target_path": "device/oneplus/sm8150-common",
     "branch"     : "ten-plus"
+  },
+  {
+    "repository"  : "android_vendor_oneplus_hotdog",
+    "target_path" : "vendor/oneplus/hotdog",
+    "branch"      : "ten"
   }
 ]
