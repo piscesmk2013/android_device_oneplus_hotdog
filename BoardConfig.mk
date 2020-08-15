@@ -34,6 +34,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Init
+TARGET_INIT_VENDOR_LIB :=  //$(DEVICE_PATH):libinit_hotdog
+TARGET_RECOVERY_DEVICE_MODULES := libinit_hotdog
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
