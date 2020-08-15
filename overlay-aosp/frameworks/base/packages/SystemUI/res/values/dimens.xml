@@ -17,4 +17,14 @@
     <dimen name="config_customCutoutTopHeight">223.0px</dimen>
     <dimen name="config_customCutoutBottomWidth">223.0px</dimen>
     <dimen name="config_customCutoutBottomHeight">223.0px</dimen>
+
+    <!-- Tri-state UI -->
+    <dimen name="tri_state_down_dialog_position">821.0px</dimen>
+    <dimen name="tri_state_down_dialog_position_l">841.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position">690.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position_l">710.0px</dimen>
+    <dimen name="tri_state_up_dialog_position">559.0px</dimen>
+    <dimen name="tri_state_up_dialog_position_l">579.0px</dimen>
+    <dimen name="tri_state_up_dialog_position_deep">21.0px</dimen>
+    <dimen name="tri_state_up_dialog_position_deep_land">21.0px</dimen>
 </resources>
