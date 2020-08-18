@@ -309,7 +309,7 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
@@ -318,14 +318,25 @@
     <integer name="config_lightSensorWarmupTime">200</integer>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_fast">400</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">355</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">240</integer>
+
+    <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
+    <integer name="config_autoBrightnessLightSensorRate">300</integer>
     
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">140px</dimen>
 
+    <!-- Minimum allowable screen brightness to use in a very dark room.
+         This value sets the floor for the darkest possible auto-brightness
+         adjustment.  It is expected to be somewhat less than the first entry in
+         config_autoBrightnessLcdBacklightValues so as to allow the user to have
+         some range of adjustment to dim the screen further than usual in very
+         dark rooms. The contents of the screen must still be clearly visible
+         in darkness (although they may not be visible in a bright room). -->
+    <integer name="config_screenBrightnessDark">17</integer>
     <!-- The default peak refresh rate for a given device. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
