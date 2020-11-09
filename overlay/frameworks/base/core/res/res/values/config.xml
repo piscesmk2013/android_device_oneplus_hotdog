@@ -351,6 +351,12 @@
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
     <!-- This change yields considerable SQLite performance gains. It should be 
          generally safe as this device has irremovable battery. -->
     <string name="db_default_journal_mode">MEMORY</string>
